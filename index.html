@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Sriharshika Sattor</h1>
+    <a href="bonus.html">Bonus</a>
     <h6>Cricket</h6>
     <p>Cricket is my favourite sport and regularly watch <b>Cricket</b> and My favourite team is <b>Indian cricket team</b></p>
     <hr>
@@ -55,6 +56,18 @@
             <td>15</td>
         </tr>
     </table>
+
+    <hr>
+    <h2>
+        Force HTTPS
+    </h2>
+    <blockquote>How to redirect all HTTP requests to HTTPS using .htaccess rules?</blockquote>
+    <a href="https://stackoverflow.com/questions/4083221/how-to-redirect-all-http-requests-to-https-using-htaccess-rules">Stackoverflow</a>
+    <pre>
+        RewriteEngine on
+        RewriteCond %{HTTPS} !on
+        RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+    </pre>
     <a href ="aboutme.html">About me</a>
 
     
